@@ -512,9 +512,9 @@
 }
 .imgglry{
   margin-top: 6.5rem;
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .fixedbutton{
   /* margin-left: 32rem; */
@@ -624,4 +624,9 @@ input{
   text-align: left;
   font-family: 'Merriweather', serif;
   margin-left: 5%;
+}
+.design-glry-img{
+  width: 19rem;
+  height: 18rem;
+  margin: 4px;
 }
