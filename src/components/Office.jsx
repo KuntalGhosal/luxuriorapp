@@ -1,21 +1,20 @@
-import React from 'react';
-import Imgglrycard from './Imgglrycard'
-import Fone from '../assets/pexels-bruce-clark-3701434.jpg'
-import Ftwo from '../assets/pexels-marc-mueller-380769.jpg'
-import Fthree from '../assets/pexels-pew-nguyen-244134.jpg'
-import Ffour from '../assets/pexels-proxyclick-visitor-management-system-2451616.jpg'
-import Fsix from '../assets/pexels-henry-&-co-3214379.jpg'
+import React from 'react'
+import "../components/Header.css"
+import {Officearray} from '../components/Officearray'
 
-export default function Office() {
-    return (
-        <div>
-            <Imgglrycard
-            Glone={Fone}
-            Gltwo={Ftwo}
-            Glthree={Fsix}
-            Glfive=""
-            Glsix={Fthree}
-            Glseven={Ffour}/>
-        </div>
-    )
+function Office() {
+  return (
+    <div className="imgglry">
+        {Officearray.map(function(img){
+          return <img
+          className="design-glry-img"
+          src={img}
+          // class="w-50 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+        })}
+    </div>
+  )
 }
+
+export default Office

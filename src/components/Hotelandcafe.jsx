@@ -1,22 +1,20 @@
-import React from 'react';
-import Imgglrycard from "./Imgglrycard";
-import Fone from "../assets/pexels-bruce-clark-3701434.jpg"
-import Ftwo from '../assets/pexels-darcy-lawrey-1730804.jpg'
-import Fthree from '../assets/pexels-emre-can-2079291.jpg'
-import Ffour from '../assets/pexels-jezriel-supang-ucho-1066634.jpg'
-import Ffive from '../assets/residential.jpg53.jpg'
+import React from 'react'
+import "../components/Header.css"
+import {Hotelandcafearray} from "../components/Hotelsandcafearray"
 
-export default function Hotelandcafe() {
-    return (
-        <div>
-            <Imgglrycard
-            Glone={Fone}
-            Gltwo={Ftwo }
-            Glthree={Fthree}
-            // Glfive=""
-            Glsix={Ffour}
-            Glseven={Ffive}
-            />
-        </div>
-    )
+function Hotelandcafe() {
+  return (
+    <div className="imgglry">
+        {Hotelandcafearray.map(function(img){
+          return <img
+          className="design-glry-img"
+          src={img}
+          // class="w-50 shadow-1-strong rounded mb-4"
+          alt=""
+        />
+        })}
+    </div>
+  )
 }
+
+export default Hotelandcafe
